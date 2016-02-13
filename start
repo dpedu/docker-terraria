@@ -1,0 +1,10 @@
+#!/bin/bash
+
+trap 'kill $(jobs -p)' EXIT
+
+: ${WORLDSIZE:=3}
+: ${WORLDFILENAME:=terraria.wld}
+
+export WORLDSIZE WORLDFILENAME
+
+supervisord
