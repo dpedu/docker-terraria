@@ -7,6 +7,14 @@ Reccomended usage:
 
 `docker run -d -p 7777:7777 -p 7878:7878 -v /host/terraria_data/:/opt/terraria/tshock/ terraria`
 
+To enable RPC, *config.json* must be copied to `/host/terraria_data/`.
+
+Env vars
+--------
+
+* `WORLDSIZE` - default 1, can be 2 or 3 for small/med/large worlds
+* `WORLDFILENAME` - default "terraria.wld", name for the world save file
+
 Admin cli
 ---------
 
@@ -22,5 +30,5 @@ Per-run token generation:
 
 Execute arbitrary commads:
 
-* `trcli -a cmd -c '/protectspawn'
+* `trcli -a cmd -c '/protectspawn'v
 

@@ -1,6 +1,5 @@
 {
   "RestApiEnabled": true,
   "RestApiPort": 7878,
-  "RestUseNewPermissionModel": true,
-  "ApplicationRestTokens": {}
+  "RestUseNewPermissionModel": true
 }
