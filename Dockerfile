@@ -4,7 +4,7 @@ FROM ubuntu:trusty
 
 RUN apt-get update && \
     apt-get install -y screen mono-complete wget unzip supervisor python3-requests && \
-    wget -O /tmp/terraria.zip https://github.com/NyxStudios/TShock/releases/download/v4.3.12/tshock_4.3.12.zip && \
+    wget -O /tmp/terraria.zip https://github.com/NyxStudios/TShock/releases/download/v4.3.16/tshock_4.3.16.zip && \
     cd /tmp && \
     unzip terraria.zip && \
     rm terraria.zip && \
